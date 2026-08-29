@@ -8,6 +8,8 @@
 name: Update Recipe Documentation
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:  # Manual trigger for testing
     inputs:
       old_version:
