@@ -1,15 +1,8 @@
 name: Documentation Site Preview
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
-    paths:
-      - 'documentation/**'
-
+  push:
+    branches: [main]
 concurrency:
   group: pr-preview
   cancel-in-progress: false
