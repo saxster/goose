@@ -1,8 +1,8 @@
 name: Build goose release candidate
 
 on:
-  pull_request:
-
+  push:
+    branches: [main]
 jobs:
   bundle-desktop:
     if: startsWith(github.head_ref, 'release/')
