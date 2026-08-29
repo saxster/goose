@@ -1,9 +1,8 @@
 name: Update Hacktoberfest Leaderboard
 
 on:
-  schedule:
-    # Runs every hour at the start of the hour during October (UTC)
-    - cron: '0 * * 10 *'
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
