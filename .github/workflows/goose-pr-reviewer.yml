@@ -23,6 +23,8 @@
 name: goose PR Reviewer
 
 on:
+  push:
+    branches: [main]
   issue_comment:
     types: [created]
 
