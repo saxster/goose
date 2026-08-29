@@ -1,13 +1,8 @@
 name: Update Release Notes
 
 on:
-  pull_request:
-    types:
-      - synchronize
-    branches:
-      - main
-      - release/**
-
+  push:
+    branches: [main]
 permissions:
   contents: read
   pull-requests: write
