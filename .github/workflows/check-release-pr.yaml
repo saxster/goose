@@ -1,13 +1,8 @@
 name: Check Release PR
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - main
-
+  push:
+    branches: [main]
 jobs:
   check-commits:
     runs-on: ubuntu-latest
