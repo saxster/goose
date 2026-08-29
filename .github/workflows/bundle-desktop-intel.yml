@@ -4,6 +4,8 @@
 #  - canary.yml
 #  - pr-comment-bundle-desktop.yml
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       version:
