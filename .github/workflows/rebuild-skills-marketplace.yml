@@ -6,9 +6,8 @@ name: Rebuild Skills Marketplace
 # 2. On manual trigger for testing
 
 on:
-  schedule:
-    # Run every hour at minute 15
-    - cron: '15 * * * *'
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       reason:
