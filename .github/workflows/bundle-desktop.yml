@@ -5,6 +5,8 @@
 #  - pr-comment-bundle-desktop.yml
 #  - bundle-desktop-manual.yml
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       version:
