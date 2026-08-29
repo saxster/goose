@@ -1,12 +1,8 @@
 name: Create Release Branch
 
 on:
-  pull_request:
-    types:
-      - closed
-    branches:
-      - main
-
+  push:
+    branches: [main]
 permissions:
   contents: write
   pull-requests: write
