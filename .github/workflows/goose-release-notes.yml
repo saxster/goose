@@ -9,6 +9,8 @@
 name: goose Release Notes Generator
 
 on:
+  push:
+    branches: [main]
   # Trigger when Release workflow completes (works around GITHUB_TOKEN limitation)
   workflow_run:
     workflows:
