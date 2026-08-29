@@ -8,6 +8,8 @@
 #  - macOS: Uses macOS runner with cross-compilation
 #  - Windows: Uses Windows runner with native MSVC build
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       version:
